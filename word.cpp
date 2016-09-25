@@ -13,3 +13,8 @@ Word::Word(int i1, int i2, int i3)
     m_iANSCIIplusKey = i1 +i2 +i3;
 }
 
+char Word::decode(int key) const
+{
+    return (char)(m_iANSCIIplusKey - key);
+}
+

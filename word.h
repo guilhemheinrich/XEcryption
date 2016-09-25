@@ -12,9 +12,12 @@ public:
     // Therefore, i1 + i2 +i3 = ANSCII value + key
     Word(int i1, int i2, int i3);
 
-private:
+    char decode(int key) const;
+
     int m_stabiEncrypted[3];
     int m_iANSCIIplusKey;
+private:
+
 
 };
 
